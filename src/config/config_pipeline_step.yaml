@@ -1,0 +1,12 @@
+- running_steps:
+    overwrite_config: true
+    run_copy_fixed_pac_file: true
+    run_set_conversion: true
+    run_relax_preprocessing: true
+    run_relax_epoching: true
+    run_file_splitting: false
+    run_pac_analysis: true
+    run_moving_data: false
+    keep_window_open: true
+    use_default_output_folder: true
+    _comment: Running step sequence

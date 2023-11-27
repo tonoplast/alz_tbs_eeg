@@ -1,0 +1,56 @@
+RELAX epoching finished.
+Extracting parameters from D:\EEG_data_collected_today\processed_EEG\RELAXProcessed\Cleaned_Data\Epoched\my_test_data_downsampled_RELAX_Epoched.set...
+Not setting metadata
+94 matching events found
+No baseline correction applied
+0 projection items activated
+Ready.
+Applying baseline correction (mode: mean)
+EEG channel type selected for re-referencing
+Adding average EEG reference projection.
+1 projection items deactivated
+Average reference projection was added, but has not been applied yet. Use the apply_proj method to apply it.
+Created an SSP operator (subspace dimension = 1)
+1 projection items activated
+SSP projectors applied...
+Fitted sphere radius:         85.0 mm
+Origin head coordinates:      0.0 -0.0 0.0 mm
+Origin device coordinates:    0.0 -0.0 0.0 mm
+
+
+#######################################################################################################                          
+#####################################    PAC results ( mean )   #######################################                          
+######                                                                                           ######                          
+######     Your individualised frequencies are:         theta: 6.0 Hz, gamma: 45 Hz              ######                          
+######                                                  theta: 166.5 ms, gamma: 22.0 ms          ######                          
+######                                                                                           ######                          
+######     Your sig. individualised frequencies are:    ******     Not found     ******          ######                          
+######                                                  ******     Not found     ******          ######                          
+######                                                                                           ######                          
+#######################################################################################################                          
+#######################################################################################################
+
+
+All peaks found for mean: [(6.0, 45), (8.0, 50), (4.0, 51), (6.0, 58), (7.0, 37), (7.0, 33)]
+
+All significant pixels found for mean: []
+
+
+#######################################################################################################                          
+#####################################    PAC results (median)   #######################################                          
+######                                                                                           ######                          
+######     Your individualised frequencies are:         theta: 6.0 Hz, gamma: 43 Hz              ######                          
+######                                                  theta: 166.5 ms, gamma: 23.5 ms          ######                          
+######                                                                                           ######                          
+######     Your sig. individualised frequencies are:    ******     Not found     ******          ######                          
+######                                                  ******     Not found     ******          ######                          
+######                                                                                           ######                          
+#######################################################################################################                          
+#######################################################################################################
+
+
+All peaks found for median: [(6.0, 43)]
+
+All significant pixels found for median: []
+    Using multitaper spectrum estimation with 7 DPSS windows
+PAC analysis finished.

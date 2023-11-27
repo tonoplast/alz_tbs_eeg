@@ -1,0 +1,91 @@
+- data_settings:
+    which_drive: 'O:'
+    input_folder: /CogTx\\DataTransfer\\ALZ TBS\\e. EEG data\\TGC/processed_EEG/RELAXProcessed/Cleaned_Data/Epoched/
+    output_folder: /CogTx\\DataTransfer\\ALZ TBS\\e. EEG data\\TGC/processed_EEG/RELAXProcessed/Cleaned_Data/Epoched/results_pac
+    data_type: epoched
+    save_output: true
+    number_of_files_to_process: ''
+    reverse_order: false
+    open_output_folder: false
+    _comment: The drive of the data to be analysed, path and whether save output or
+      not, and the output folder
+  pre_pac_settings:
+    average_reref: true
+    laplacian_transform: true
+    baseline_correction: true
+    _comment: Settings before PAC - rereferencing
+  epoch_variable:
+    tmin: -6
+    tmax: 6
+    overlap: 9
+    _comment: Epoch parameters
+  frequency_of_interest:
+    freqs_of_interest:
+    - theta
+    - gamma
+    modulating_freq_range:
+    - 4
+    - 8
+    modulated_freq_range:
+    - 30
+    - 60
+    modulating_channels:
+    - FZ
+    modulated_channels:
+    - PZ
+    _comment: Frequency parameters
+  filter_width_step:
+    lo_bandwidth: 1
+    lo_step: 1
+    hi_bandwidth: 1
+    hi_step: 1
+    _comment: Filter parameters
+  other_filter_settings:
+    edge_length: 0.5
+    f_min_max:
+    - 2
+    - 80
+    _comment: Other filter parameters
+  pac_settings:
+    dcomplex: hilbert
+    idpac: !!python/tuple
+    - 6
+    - 1
+    - 4
+    random_state: 0
+    hilbert_cycle: !!python/tuple
+    - 3
+    - 6
+    wavelet_width: 7
+    _comment: PAC parameters
+  stats:
+    pvalue_threshold: 0.05
+    mcp: maxstat
+    no_of_permutations: 2500
+    _comment: Statistical parameters
+  peak_detection:
+    minimum_distance: 1
+    central_tendency:
+    - mean
+    - median
+    _comment: Peak detection parameters, including if using mean or median for PAC
+      plot
+  plot_settings:
+    plot_eeg_trace: false
+    freq_ranges_to_check_power:
+    - - 4
+      - 8
+    - - 8
+      - 13
+    - - 13
+      - 30
+    - - 30
+      - 39
+    - - 40
+      - 46
+    - - 47
+      - 53
+    - - 54
+      - 60
+    _comment: EEG trace plot will pop and and will not continue without intervening,
+      so adding option to turn it off for multiple data run

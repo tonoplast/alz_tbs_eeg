@@ -1,0 +1,16 @@
+- moving_data:
+    which_drive_from: 'O:'
+    which_drive_to: 'O:'
+    move_from_folder_user_defined: /CogTx\\DataTransfer\\ALZ TBS\\e. EEG data\\TGC/processed_EEG/RELAXProcessed
+    move_to_folder_user_defined: /CogTx\\DataTransfer\\ALZ TBS\\e. EEG data\\TGC/processed_EEG/RELAXProcessed
+    move_from_folder_default: /CogTx\\DataTransfer\\ALZ TBS\\e. EEG data\\TGC
+    move_to_folder_default: /pac_output_20231104_135437
+    _comment: Data moving from and to
+  replace_pac_src:
+    copy_from_folder: C:\Users\wooks\GitHub\alz_tbs_eeg\src\utils\pac_src_fixed
+    copy_to_folder: C:\Users\wooks\Anaconda3\envs\tram_protocol_eeg\Lib\site-packages\tensorpac
+    files_to_copy:
+    - pac.py
+    - spectral.py
+    - utils.py
+    _comment: This is to replace pac source code file that throw erros.
